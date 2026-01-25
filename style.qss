@@ -1,0 +1,14 @@
+QWidget#central {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #4f8edb,
+        stop:1 #a8d8ff
+    );
+}
+
+
+QLabel {
+    color: white;
+    font-size: 18px;
+}
+
