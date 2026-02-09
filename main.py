@@ -1,11 +1,11 @@
 import sys
+
+from pathlib import Path
+
 from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QSizePolicy
 from PySide6.QtWidgets import QGridLayout
 from PySide6.QtWidgets import QLabel
 from PySide6.QtCore import Qt
-#from PySide6.QtGui import *
-
-from pathlib import Path
 
 
 class MainWindow(QMainWindow):
