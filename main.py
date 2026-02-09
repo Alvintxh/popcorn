@@ -15,7 +15,7 @@ class MainWindow(QMainWindow):
         self.InitMainWindow()
 
     def InitMainWindow(self):
-        self.setWindowTitle("Popcorn")
+        self.setWindowTitle("Popcorn Music")
         self.resize(500, 300)
         central = QWidget()
         central.setObjectName("central")
