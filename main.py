@@ -12,11 +12,15 @@ class MainWindow(QMainWindow):
 
     def __init__(self) -> None:
         super().__init__()
+
+        self.windowTitle = "Popcorn Music"
+        self.windowWidth = 500
+        self.windowHeight = 300
         self.InitMainWindow()
 
     def InitMainWindow(self):
-        self.setWindowTitle("Popcorn Music")
-        self.resize(500, 300)
+        self.setWindowTitle(self.windowTitle)
+        self.resize(self.windowWidth, self.windowHeight)
         central = QWidget()
         central.setObjectName("central")
         central.setAttribute(Qt.WA_StyledBackground, True)
