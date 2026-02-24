@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/popcorn/app.py
+src/popcorn.egg-info/PKG-INFO
+src/popcorn.egg-info/SOURCES.txt
+src/popcorn.egg-info/dependency_links.txt
+src/popcorn.egg-info/entry_points.txt
+src/popcorn.egg-info/requires.txt
+src/popcorn.egg-info/top_level.txt
+src/popcorn/core/llm_moonshot.py
+src/popcorn/core/types.py
+src/popcorn/ui/main_window.py
+src/popcorn/util/qss.py

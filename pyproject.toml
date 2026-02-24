@@ -1,0 +1,31 @@
+[project]
+name = "popcorn"
+version = "0.1.0"
+description = "Popcorn Music — AI lyrics generator (GUI)"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Alvin" }]
+dependencies = [
+  "PySide6>=6.6",
+  "httpx>=0.27",
+]
+
+[project.scripts]
+popcorn = "popcorn.app:main"
+
+[tool.uv]
+# (optional) If you use uv, it will read dependencies from [project].
+
+[tool.ruff]
+line-length = 100
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
