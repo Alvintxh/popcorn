@@ -1,14 +1,85 @@
+/* Popcorn Music — Light theme */
+
 QWidget#central {
-    background: qlineargradient(
-        x1:0, y1:0, x2:1, y2:1,
-        stop:0 #4f8edb,
-        stop:1 #a8d8ff
-    );
+  /* soft warm background */
+  background: qlineargradient(
+    x1:0, y1:0, x2:1, y2:1,
+    stop:0 #fff7ed,
+    stop:0.55 #f6f7ff,
+    stop:1 #eef9ff
+  );
 }
 
+QGroupBox {
+  color: #111827;
+  font-weight: 600;
+  border: 1px solid rgba(17, 24, 39, 0.10);
+  border-radius: 12px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+QGroupBox::title {
+  subcontrol-origin: margin;
+  left: 12px;
+  padding: 0 6px;
+}
 
 QLabel {
-    color: white;
-    font-size: 18px;
+  color: #111827;
 }
 
+QLineEdit,
+QPlainTextEdit,
+QTextEdit,
+QComboBox {
+  background: rgba(255, 255, 255, 0.85);
+  color: #111827;
+  border: 1px solid rgba(17, 24, 39, 0.14);
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+QPlainTextEdit {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 12px;
+}
+
+QLineEdit:focus,
+QPlainTextEdit:focus,
+QTextEdit:focus,
+QComboBox:focus {
+  border: 1px solid rgba(79, 70, 229, 0.55);
+}
+
+QCheckBox {
+  color: #111827;
+}
+
+QPushButton {
+  background: #111827;
+  color: #ffffff;
+  border: 0;
+  border-radius: 10px;
+  padding: 9px 12px;
+  font-weight: 600;
+}
+
+QPushButton:hover {
+  background: #0b1220;
+}
+
+QPushButton:disabled {
+  background: rgba(17, 24, 39, 0.35);
+}
+
+/* Secondary buttons: we set these via objectName in code in the future; keep a gentle default */
+
+QComboBox::drop-down {
+  border: 0;
+  width: 28px;
+}
+
+QComboBox::down-arrow {
+  image: none;
+}
